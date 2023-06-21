@@ -84,7 +84,6 @@ app.get("/help/*", (req, res) => {
     name: "George Barbakadze",
   });
 });
-11;
 
 app.get("*", (req, res) => {
   res.render("notFound", {
