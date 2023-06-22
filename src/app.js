@@ -23,14 +23,14 @@ app.use(express.static(publicDirectoryPath));
 app.get("", (req, res) => {
   res.render("index", {
     title: "Weather App",
-    name: "George Barbakadze",
+    name: "Olysar",
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
     title: " About",
-    name: "George Barbakadze",
+    name: "Olysar",
   });
 });
 
@@ -39,7 +39,7 @@ app.get("/help", (req, res) => {
     helpText:
       "HELP! I need somebody, HELP! not just anybody, HELP! you know I need someone to heeeeelp!",
     title: "Help",
-    name: "George Barbakadze",
+    name: "Olysar",
   });
 });
 
@@ -81,7 +81,7 @@ app.get("/help/*", (req, res) => {
   res.render("notFound", {
     notFoundText: "Help article not found",
     title: "Error code: 404",
-    name: "George Barbakadze",
+    name: "Olysar",
   });
 });
 
@@ -89,7 +89,7 @@ app.get("*", (req, res) => {
   res.render("notFound", {
     notFoundText: "Page not found",
     title: "Error code: 404",
-    name: "George Barbakadze",
+    name: "Olysar",
   });
 });
 
