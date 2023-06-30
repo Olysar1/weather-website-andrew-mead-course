@@ -12,7 +12,7 @@ const forecast = (lat, lng, callback) => {
       const dataBodyCurrent = body.current;
       callback(
         undefined,
-        `The weather at this moment is ${dataBodyCurrent.weather_descriptions[0]}. It is ${dataBodyCurrent.temperature} degrees out. It feels like ${dataBodyCurrent.feelslike} degrees out.`
+        `The weather at this moment is ${dataBodyCurrent.weather_descriptions[0]}. It is ${dataBodyCurrent.temperature} degrees out. Feels like ${dataBodyCurrent.feelslike}. The humidity level is ${dataBodyCurrent.humidity}. The wind is blowing from ${dataBodyCurrent.wind_dir} (${dataBodyCurrent.wind_degree} degrees). A treat for fishermen: The pressure is ${dataBodyCurrent.pressure}.`
       );
     }
   });
